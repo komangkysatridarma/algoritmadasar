@@ -19,10 +19,6 @@
 
 if($_POST){
     $int = $_POST['int'];
-    $jam = 0;
-    $menit = 0;
-    $detik = 0;
-    $sisadetik = 0;
     $td;
 
     $jam = floor($int / 3600);
