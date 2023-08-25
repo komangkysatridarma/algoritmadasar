@@ -118,15 +118,16 @@ if($_POST){
     if($ss >= 60){
         $mm++ && $ss = 0;
 
-        if($mm >= 60){
-            $hh++ && $mm = 0 && $ss = 0;
-        }
-        else if($hh >= 24){
-            $hh = 0;
-            $mm = 0;
-            $ss = 0;
-        }    
+        
     }
+    if($mm >= 60){
+        $hh++ && $mm = 0 && $ss = 0;
+    }
+    if($hh >= 24){
+        $hh = 0;
+        $mm = 0;
+        $ss = 0;
+    }    
 
     echo "$hh:$mm:$ss";
 
