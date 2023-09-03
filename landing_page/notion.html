@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latian</title>
+
+    <style>
+
+        /* *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } */
+        .button{
+            float: right;
+            border-radius: 1.5rem;
+            width: 10rem;
+            background-color: antiquewhite;
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+        }
+        .text{
+            text-align: center;
+        }
+        /* .gambar{
+            float: right;
+        } */
+        .foto img{
+            width: 600px;
+            max-width: 100%;
+        }
+        .container-infor{
+            float: left;
+            height: 76vh;
+            width: 50%;
+            /* justify-content: space-between; */
+            clear: right;
+            /* background-color: antiquewhite; */
+        }
+        .gambar{
+            float: right;
+            width: 50%;
+        }
+        .kolomm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        float:right;
+        box-sizing: border-box;
+		padding: 10px;
+      }
+      .kolom{
+        width: 360px;
+        height: 100px;
+        /* background-color: aquamarine; */
+        margin: 3px;
+        box-sizing: border-box;
+		padding: 30px;
+      }
+      .kolom1,.kolom2, .kolom3,.kolom4{
+        background-color: antiquewhite;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+      span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* .kolom4{ */
+        /* clear: left;
+        width: 100%;
+        background-color: aqua;
+      } */
+      ol li{
+        font-size: 1.4rem;
+      }
+      .pengaduan{
+        display: flex;
+        clear: right;
+      }
+      .pengaduan .text{
+        margin-left: 15rem;
+      }
+      .pengaduan .form{
+        margin-left: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0.5rem;
+        background-color: antiquewhite;
+      }
+      .pengaduan .form .keterangan{
+      }
+      .pengaduan .form .keterangan h3{
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      .column{
+        display: flex;
+        flex-direction: column;
+        margin-left:1rem;
+        margin-bottom: 3rem;
+      }
+      input{
+        width: 40rem;
+        max-width: 100%;
+      }
+      .btn{
+        float: right;
+        /* margin: 2rem; */
+        border-radius: 1rem;
+        background-color: antiquewhite;
+      }
+      .laporan{
+        margin-left: 1rem;
+      }
+      .lap-pengaduan{
+        display: flex;
+        flex-direction: column;
+      }
+      .laporan .lap-pengaduan .info{
+        padding: 1rem;
+        border: 1px solid black;
+        margin-bottom: 1rem;
+      }
+      .laporan .lap-pengaduan .info .waktu{
+        float: right;
+      }
+      .laporan .lap-pengaduan .info .lorem{
+        clear: right;
+        width: 70%;
+      }
+      .laporan .lap-pengaduan .info img{
+        width: 200px;
+        max-width: 100%;
+        float: right;
+      }
+      .laporan .lap-pengaduan .info .flex{
+        display: flex;
+        clear: right;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="button">
+        <div class="text">
+            <p>Administrator</p>
+        </div>
+    </div>
+
+    <div class="container-infor">
+        <div class="informasi">
+            <h1>Pengaduan Masyarakat</h1>
+            <ol>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio sed nisi pariatur fugiat numquam. Corporis.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid alias magni beatae impedit?
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio unde laudantium, quidem accusantium corporis deleniti distinctio.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="gambar">
+        <div class="foto">
+            <img src="img/kafkaicon.jpeg" alt="">
+        </div>
+    </div>
+
+    <section class="kolomm">
+       <div class="kolom kolom1">Jumlah Kecamatan <span>15</span></div>
+	   <div class="kolom kolom2">Jumlah desa <span>30</span></div>
+	   <div class="kolom kolom3">Jumlah Penduduk <span>1200</span></div>
+	   <div class="kolom kolom4">Jumlah PerTahun <span>2023</span></div>
+    </section>  
+    
+    <div class="pengaduan">
+        <div class="form">
+            <div class="keterangan">
+                <h3>Buat Pengaduan</h3>
+                <div class="column">               
+                <label for="nik">Nik</label>
+                <input type= "number" name="nik" id="nik" style="margin-bottom: 1rem;">
+                <label for="nama">Nama Lengkap</label>
+                <input type= "email" name="nama" id="nama" style="margin-bottom: 1rem;">
+                <label for="no">No Telepon</label>
+                <input type= "number" name="no" id="no" style="margin-bottom: 1rem;">
+                <label for="pengaduan">Pengaduan</label>
+                <input type= "text" name="pengaduan" id="pengaduan" style="padding: 3rem 0; margin-bottom: 1rem;">
+                <label for="file">Upload Gambar Terkait</label>
+                <input type= "file" name="file" id="file">
+                </div> 
+                <button type="submit" name="submit" class="btn">Kirim</button>
+            </div>
+        </div>
+        <div class="laporan">
+            <div class="lap-pengaduan">
+                <h2>Laporan Pengaduan</h2>
+                <div class="info">
+                    <p class="waktu">22 Juni 2022: Fema Flamelina Puri</p>
+                    <div class="flex">
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur quis doloribus maxime cupiditate voluptate possimus culpa libero alias in.</p>
+                    <img src="img/kafkaicon.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="waktu">22 Juni 2022: Fema Flamelina Puri</p>
+                    <div class="flex">
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur quis doloribus maxime cupiditate voluptate possimus culpa libero alias in.</p>
+                    <img src="img/kafkaicon.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

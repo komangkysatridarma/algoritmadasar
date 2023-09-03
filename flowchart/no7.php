@@ -28,7 +28,7 @@
             echo "<label>Kehadiran:</label>";
             echo "<input type='number' name='kehadiran[]'><br>";
         }
-        ?>
+        ?>  
         <input type="submit" name="submit" value="Cari Juara">
     </form>
     <?php
